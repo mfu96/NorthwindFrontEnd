@@ -1,0 +1,21 @@
+<!-- Welcome to {{title}}<br>  --> <!-- title dediğimde app.components.ts'den title'ın
+   karşılığını bulup ekrana basar bu şekilde de statik yapıyı aşabilmiş oluruz-->
+<!-- Holaa {{user}}<br> -->
+<!-- {{product.productName}}  --> <!--javaScript büyük-küçük harf duyarlıdır-->
+<!-- <ul> -->
+  <!-- <li *ngFor="let product of products">{{product.productName}}</li>  --><!-- *ngFor= Directive'dir li'yi dön demektir-->
+
+
+<!-- </ul> -->
+<div class="container"><!--  bootstrap'te sayfayı 12 birime böldüğümüz varsayılır -->
+  <app-navi></app-navi>
+  <div class="row">
+    <div class="col-md-3">
+       <app-category></app-category>
+       </div>
+    <div class="col-md-9"> <!--  3 birimi çıkarınca kalan 9 birimi buraya bırakıyoruz -->
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>
