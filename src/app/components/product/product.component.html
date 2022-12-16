@@ -29,9 +29,9 @@
     <td>{{ product.productId }}</td>
     <td>{{ product.productName | uppercase }}</td>
     <td>{{ product.categoryId }}</td>
-    <td>{{ product.unitPrice |currency }}</td>
-    <td>{{ product.unitPrice | vatAdded:10 | currency }}</td>
-    <td>{{ product.unitsInStock }}</td>
+    <td>{{ product.unitPrice |currency:'₺' :true  }}</td>
+    <td>{{ product.unitPrice | vatAdded:10 | currency:'₺' :true  }}</td>
+    <td>{{ product.unitsInStock  }}</td>
     <td> <button (click)="addToCart(product)" type="button" class="btn btn-success btn-xs">Sepete Ekle</button></td>
   </tr>
 </tbody>
